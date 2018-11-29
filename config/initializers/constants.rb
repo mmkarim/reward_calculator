@@ -1,0 +1,3 @@
+RECOMMEND_ACTION = "recommends"
+ACCEPT_ACTION = "accepts"
+BASE_POINT = 0.5

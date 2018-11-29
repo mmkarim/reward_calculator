@@ -1,2 +1,9 @@
-<h1>Dashboard#index</h1>
-<p>Find me in app/views/dashboard/index.html.erb</p>
+<%= flash[:notice] %>
+
+<div>
+  <h4> Import a valid csv to start </h4>
+    <%= form_tag dashboard_import_path, multipart: true do %>
+    <%= file_field_tag :csv %>
+    <%= submit_tag "Import CSV" %>
+    <% end %>
+</div>
