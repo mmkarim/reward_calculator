@@ -6,6 +6,6 @@ class DashboardController < ApplicationController
     csv = params[:csv]
     redirect_to(root_url, notice: "Please import a valid csv") && return unless csv
 
-    @customer = RewardLogic.new(csv).calculate
+    @customer_result = RewardLogic.new(csv).calculate
   end
 end
